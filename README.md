@@ -1,4 +1,8 @@
 # The box problem
+
+[![Continuous Integration](https://github.com/benoitpas/box-problem/actions/workflows/main.yml/badge.svg)](https://github.com/benoitpas/box-problem/actions/workflows/main.yml)
+
+
 ## Or, How to find a good example to apply [TDD](https://en.wikipedia.org/wiki/Test-driven_development) while noodling.
 
 I discovered the box problem in [this article](https://www.theguardian.com/science/2024/sep/30/can-you-solve-it-the-box-problem-that-baffled-the-boffins) while browsing the paper.
