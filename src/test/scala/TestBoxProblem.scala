@@ -6,9 +6,10 @@ class TestBoxProblem:
   @Test def test5x3(): Unit =
     assertEquals((0, 0, 1), BoxProblem.solve(5, 3))
 
+  val nbCol = 2
+  val nbRow = 3
+
   @Test def testGenerateCombinations(): Unit =
-    val nbCol = 2
-    val nbRow = 3
     val c = BoxProblem.generateCombinations(nbCol, nbRow)
     val nbCell = nbCol * nbRow
     val l = c
@@ -17,3 +18,15 @@ class TestBoxProblem:
       )
       .sorted
     assertEquals((0 to nbCell * nbCell - 1).toList, l)
+
+  @Test def distances1(): Unit =
+    assertEquals((1, 1), BoxProblem.distances(1, 1, nbCol, nbRow))
+
+  @Test def distances2(): Unit =
+    assertEquals((nbCol * nbRow, nbCol * nbRow), BoxProblem.distances(nbCol, nbRow, nbCol, nbRow))
+
+  @Test def distances3(): Unit =
+    assertEquals((nbCol + 1, 1), BoxProblem.distances(1, 2, nbCol, nbRow))
+
+  @Test def distances4(): Unit =
+    assertEquals((1, nbRow + 1), BoxProblem.distances(2, 1, nbCol, nbRow))

@@ -13,4 +13,6 @@ object BoxProblem {
       c1 <- oneCell
       c2 <- oneCell
     yield (c1, c2)
+
+  def distances(col: Int, row: Int, nbCol: Int, nbRow: Int): (Int, Int) = (0, 0)
 }
