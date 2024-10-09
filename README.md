@@ -15,3 +15,13 @@ Then I realised a solution could also be implemented using TDD, starting from a 
 * 'H' is the number of boxes opened by Andrew first in the article for all combinations as he goes horizontally
 * 'V' is the number of boxes opened by Barbara first as she goes vertically
 * 'HV' is the number of boxes they open together
+
+I first implemented a test for a high level function that returns the final result.
+
+Then I implemented first the test and then function that fulfills it for the following actions:
+* returning all possible combinations
+* computing both distances for a cell
+
+Finally I used the 2 functions to implement the high level function. Then I realized my expectations were not correct because of a bug in the excel spreadsheet !
+
+After fixing the excel spreadsheet and the expectations, both solutions gave the same results. In retrospect the initial spread sheet result was suspicious because the difference between combinations was too high.

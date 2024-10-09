@@ -4,7 +4,7 @@ import javax.swing.CellEditor
 
 class TestBoxProblem:
   @Test def test5x3(): Unit =
-    assertEquals((128, 53, 44), BoxProblem.solve(5, 3))
+    assertEquals((92, 84, 49), BoxProblem.solve(5, 3))
 
   val nbCol = 2
   val nbRow = 3
