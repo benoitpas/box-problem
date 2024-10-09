@@ -14,5 +14,8 @@ object BoxProblem {
       c2 <- oneCell
     yield (c1, c2)
 
-  def distances(col: Int, row: Int, nbCol: Int, nbRow: Int): (Int, Int) = (0, 0)
+  def distances(col: Int, row: Int, nbCol: Int, nbRow: Int): (Int, Int) = 
+    val h = col + (row - 1)*nbCol
+    val v = (col -1)*nbRow + row
+    (h,v)
 }
