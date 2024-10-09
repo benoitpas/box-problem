@@ -26,7 +26,7 @@ class TestBoxProblem:
     assertEquals((nbCol * nbRow, nbCol * nbRow), BoxProblem.distances(nbCol, nbRow, nbCol, nbRow))
 
   @Test def distances3(): Unit =
-    assertEquals((nbCol + 1, 1), BoxProblem.distances(1, 2, nbCol, nbRow))
+    assertEquals((nbCol + 1, 2), BoxProblem.distances(1, 2, nbCol, nbRow))
 
   @Test def distances4(): Unit =
-    assertEquals((1, nbRow + 1), BoxProblem.distances(2, 1, nbCol, nbRow))
+    assertEquals((2, nbRow + 1), BoxProblem.distances(2, 1, nbCol, nbRow))
