@@ -1,7 +1,7 @@
 case class Cell(col: Int, row: Int)
 
 object BoxProblem {
-  def solve(nbCol: Int, nbRow: Int) = (0, 0, 1)
+  def solve(nbCol: Int, nbRow: Int) = ???
 
   def generateCombinations(nbCol: Int, nbRow: Int): List[(Cell, Cell)] =
     val oneCell = (for
@@ -14,8 +14,8 @@ object BoxProblem {
       c2 <- oneCell
     yield (c1, c2)
 
-  def distances(col: Int, row: Int, nbCol: Int, nbRow: Int): (Int, Int) = 
-    val h = col + (row - 1)*nbCol
-    val v = (col -1)*nbRow + row
-    (h,v)
+  def distances(col: Int, row: Int, nbCol: Int, nbRow: Int): (Int, Int) =
+    val h = col + (row - 1) * nbCol
+    val v = (col - 1) * nbRow + row
+    (h, v)
 }
