@@ -17,9 +17,9 @@ jobs:
     steps:
       - name: Checkout current branch (full)
       - uses: actions/checkout@v4
-      - uses: sbt/setup-sbt@v1
         with:
           fetch-depth: 0
+      - uses: sbt/setup-sbt@v1
 
       - name: Setup Java
         uses: actions/setup-java@v4
